@@ -19,7 +19,7 @@
     <form id="empForm">
         <div>
             <label>8-Digit Employee ID</label><br>
-            <input type = "text" id= "id">
+            <input type = "text" id= "id" maxlength="8">
         </div>
         <div>
             <label>Full Name</label><br>
@@ -27,21 +27,22 @@
         </div>
         <div>
             <label>4-Digit Extension</label><br>
-            <input type = "text" id= "ext">
+            <input type = "text" id= "ext" maxlength="4">
         </div>
         <div>
             <label>Email</label><br>
             <input type = "email" id= "email">
         </div>
-        <div class="dropdown">
-            <label>department</label><br>
-            <input type = "select" id= "department" value="	
-            Administrative, Engineering, Executive, Marketing, Quality Assurance, Sales">
-            <!-- <ul>
-                <li>Administrative</li>
-            </ul> -->
-        </div>
         <div>
+            <label>Department</label><br>
+            <select class="form-select" id= "department">
+              <option>Administrative</option>
+              <option>Engineering</option>
+              <option>Executive</option>
+              <option>Marketing</option>
+              <option>Quality Assurance</option>
+              <option>Sales</option>
+            </select>
             <input type = "submit" value="Add Employee">
         </div>
     </form>
